@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html style="--vh: 615px;" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="index_files/NRJS-aa4c79310949334ef1d"></script><script src="index_files/nr-1215.js"></script><script type="text/javascript" async="" src="index_files/analytics.js"></script><script type="text/javascript" async="" src="index_files/js"></script><script type="text/javascript" async="" src="index_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-Ji02Q+HlDQMdIyq1cNkjB6QJX/pXe47Ws8fICRcxBJ4SR/sMTvGuJwgz8C+6Ff0R"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VwYCWFRSARAEUFZTBQcPV1U=",licenseKey:"NRJS-aa4c79310949334ef1d",applicationID:"447126811"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(28),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(29),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(29),a=t(28);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(25),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(28),s=t(29),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(27),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],26:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(28),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(22),s=t("handle"),c=t(28),f=t("ee"),u=t(26),d=t(23),l=t(17),p=t(19),h=l.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},S=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:S,userAgent:u,disabled:b};if(!b){t(16),t(24),v[w]?(v[w]("DOMContentLoaded",o,p(!1)),m[w]("load",r,p(!1))):(v[g]("onreadystatechange",i),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(29),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Your Profile</title>
+
+  <link rel="stylesheet" href="index_files/style-2.css">
+  <link rel="stylesheet" href="index_files/animate.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://direct.me/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="index_files/default.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="index_files/default.webp">
+  <link rel="manifest" href="https://direct.me/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ff0d4d">
+  <meta name="msapplication-config" content="/favicons/4_browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+      <meta name="csrf-token" content="104ab694c4b7fe238ce2026c480f50040d8a88a4828f89db6c379722b32a01fd">
+    
+      <script src="index_files/a"></script>
+  
+  
+  <script async="" defer="defer" data-domain="direct.me" src="index_files/plausible.js"></script>
+  <script>
+    window.plausible = window.plausible || function() {
+      (window.plausible.q = window.plausible.q || []).push(arguments)
+    }
+  </script>
+
+  <link href="index_files/css2_002.css" rel="stylesheet">
+
+      <!-- Hotjar Tracking Code for direct.me -->
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+          (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+          hjid: 2325597,
+          hjsv: 6
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script><script async="" src="index_files/hotjar-2325597.js"></script>
+
+  <script src="index_files/l.js" async=""></script><link href="https://client.relay.crisp.chat/" rel="dns-prefetch" crossorigin=""><link href="https://client.crisp.chat/" rel="preconnect" crossorigin=""><script src="index_files/client.js" type="text/javascript" async=""></script><link href="index_files/client_default.css" type="text/css" rel="stylesheet"><script async="" src="index_files/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+<body class="animated fadeIn">
+
+  
+            <div class="mobileNav">
+        <div class="containerSm">
+          <ul class="nav">
+            <li class="navItem">
+              <a href="https://direct.me/me" class="navLink active">
+                <div class="navLinkIcon">
+                  <img src="index_files/default.webp" alt="">
+                </div>
+                <span class="navLinkLabel">Me</span>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="https://direct.me/inbox" title="Your inbox" class="navLink">
+                                  <span class="notificationIcon">1</span>
+                                <div class="navLinkIcon">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.7 72"><path d="M60.4 10.4C53.8 3.7 44.9 0 35.5 0h-.2C15.8 0 0 15.8 0 35.3c0 7.9 2.6 15.6 7.5 21.8l-5 11.5c-.3.6-.3 1.3 0 1.9.2.6.7 1.1 1.3 1.3.3.1.7.2 1 .2h.4l18.5-3.2c3.7 1.3 7.6 2 11.5 2h.2c19.5 0 35.4-15.9 35.4-35.4 0-9.4-3.7-18.4-10.4-25zM18 26.5h21.4c1.2.1 2.2 1.1 2.3 2.3.1 1.3-.9 2.5-2.3 2.6H17.7c-1.3-.1-2.4-1.2-2.3-2.6.1-1.4 1.2-2.4 2.6-2.3zm37.2 11.9c0 1.3-1.1 2.4-2.4 2.4H18c-1.3 0-2.4-1.1-2.4-2.4s1-2.4 2.4-2.4h34.7c1.4 0 2.5 1.1 2.5 2.4z"></path></svg>                </div>
+                <span class="navLinkLabel">Inbox</span>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="https://direct.me/me/stats" class="navLink" title="Your stats">
+                <div class="navLinkIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 17h-6a1 1 0 00-1 1v13a1 1 0 001 1h6a1 1 0 001-1V18a1 1 0 00-1-1zM7 23H1a1 1 0 00-1 1v7a1 1 0 001 1h6a1 1 0 001-1v-7a1 1 0 00-1-1zM31 11h-6a1 1 0 00-1 1v19a1 1 0 001 1h6a1 1 0 001-1V12a1 1 0 00-1-1z"></path><path d="M16 12a.997.997 0 00.707-.293L25 3.414V8h2V1a1 1 0 00-1-1h-7v2h4.586L16 9.586l-4.293-4.293a.999.999 0 00-1.414 0l-5 5 1.414 1.414L11 7.414l4.293 4.293A.997.997 0 0016 12z"></path></svg>                </div>
+                <span class="navLinkLabel">Stats</span>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="https://direct.me/explore" class="navLink" title="Explore">
+                <div class="navLinkIcon">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.7 72"><path d="M31 0H2.6C1.2 0 0 1.2 0 2.6V31c0 1.4 1.2 2.6 2.6 2.6H31c1.4 0 2.6-1.2 2.6-2.6V2.6C33.6 1.2 32.4 0 31 0zm-2.3 26.1c0 1.4-1.2 2.6-2.6 2.6H7.4c-1.4 0-2.6-1.2-2.6-2.6V7.4C4.9 6 6 4.9 7.4 4.9h18.7c1.4 0 2.6 1.2 2.6 2.6v18.6zM31 38.4H2.6C1.2 38.4 0 39.6 0 41v28.4C0 70.8 1.2 72 2.6 72H31c1.4 0 2.6-1.2 2.6-2.6V41c0-1.4-1.2-2.6-2.6-2.6zM68.1 38.4H39.7c-1.4 0-2.6 1.2-2.6 2.6v28.4c0 1.4 1.2 2.6 2.6 2.6h28.4c1.4 0 2.6-1.2 2.6-2.6V41c0-1.4-1.1-2.6-2.6-2.6zM63 18.9H44.9c-4.3 0-7.7 3.5-7.7 7.7V31c0 1.4 1.2 2.6 2.6 2.6h28.4c1.4 0 2.6-1.2 2.6-2.6v-4.3c-.1-4.3-3.5-7.8-7.8-7.8z"></path><circle cx="54" cy="8.1" r="8.1"></circle></svg>                </div>
+                <span class="navLinkLabel">Discover</span>
+              </a>
+            </li>
+            <li class="navItem">
+              <a data-toggle="modal" data-target="#menu" class="navLink">
+                <div class="navLinkIcon">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M36 0C16.1 0 0 16.1 0 36s16.1 36 36 36 36-16.1 36-36S55.9 0 36 0zm5.8 52.9H30.2c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6h11.7c2 0 3.6 1.6 3.6 3.6s-1.6 3.6-3.7 3.6zM45 39.6H27c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6h18c2 0 3.6 1.6 3.6 3.6S47 39.6 45 39.6zm4.2-13.2H22.8c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6h26.4c2 0 3.6 1.6 3.6 3.6s-1.6 3.6-3.6 3.6z"></path></svg>                </div>
+                <span class="navLinkLabel">Menu</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+  
+    <div id="menu" class="modal">
+      <button class="modalClose" data-dismiss="modal">
+        ×
+      </button>
+
+      <div class="slides">
+        <div id="menuMain" class="slide active">
+
+          <div class="modalTitle">
+            <div class="modalTitleInner">
+              <a href="https://direct.me/saboox" class="avatarBlock">
+                <div class="avatar">
+                  <img src="index_files/default.webp" alt="saboox">
+                </div>
+                <div>
+                  <h2 class="avatarBlockName">saboox</h2>
+                  <span class="avatarBlockSub">direct.me/saboox</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modalBody">
+            
+            <div class="list">
+                              <a href="https://direct.me/me/settings" class="listItem">
+                  <div class="listItemIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor"><path d="M32 43.71c-6.46 0-11.71-5.25-11.71-11.71S25.54 20.29 32 20.29 43.71 25.54 43.71 32 38.46 43.71 32 43.71zm0-18.26A6.56 6.56 0 0025.45 32 6.56 6.56 0 0032 38.55 6.56 6.56 0 0038.55 32 6.56 6.56 0 0032 25.45z"></path><path d="M37.91 64H26.14c-2.44 0-4.42-1.98-4.42-4.42v-3.25c-1.99-.84-3.87-1.93-5.6-3.23l-2.84 1.64c-1.02.59-2.21.75-3.35.44a4.41 4.41 0 01-2.68-2.06l-5.89-10.2a4.414 4.414 0 011.62-6.03l2.81-1.62c-.14-1.09-.2-2.18-.2-3.26 0-1.07.07-2.14.2-3.21l-2.83-1.64A4.41 4.41 0 01.9 24.48c-.31-1.14-.15-2.33.44-3.35l5.89-10.2a4.428 4.428 0 016.03-1.62l2.83 1.63c1.73-1.31 3.6-2.4 5.59-3.25V4.42C21.68 1.98 23.66 0 26.1 0h11.78c2.44 0 4.42 1.98 4.42 4.42v3.25c1.99.84 3.87 1.92 5.6 3.23l2.84-1.64c1.02-.59 2.21-.75 3.35-.44a4.41 4.41 0 012.68 2.06l5.89 10.2c.59 1.02.75 2.21.44 3.35a4.41 4.41 0 01-2.06 2.68l-2.81 1.62c.14 1.09.2 2.18.2 3.26 0 1.07-.07 2.14-.2 3.21l2.83 1.64a4.41 4.41 0 011.62 6.03l-5.89 10.2a4.41 4.41 0 01-2.68 2.06c-1.14.31-2.33.15-3.35-.44l-2.83-1.63c-1.73 1.31-3.6 2.4-5.59 3.24v3.27c-.01 2.45-1.99 4.43-4.43 4.43zm-11.04-5.15h10.3V52.7l1.74-.6c2.6-.9 4.98-2.28 7.06-4.1l1.39-1.21 5.32 3.07 5.15-8.92-5.32-3.07.35-1.81c.26-1.35.39-2.71.39-4.06 0-1.37-.14-2.75-.4-4.11l-.36-1.81 5.31-3.06-5.15-8.92-5.33 3.08-1.39-1.21a21.144 21.144 0 00-7.07-4.08l-1.74-.6V5.16h-10.3v6.14l-1.74.6c-2.6.9-4.98 2.28-7.06 4.1l-1.39 1.21-5.32-3.07-5.15 8.92 5.32 3.07-.35 1.81a21.5 21.5 0 00-.39 4.07c0 1.37.14 2.75.4 4.11l.36 1.81-5.31 3.06 5.15 8.92 5.33-3.08 1.39 1.21c2.09 1.82 4.47 3.19 7.07 4.08l1.74.6v6.13z"></path></svg>                  </div>
+                  Settings
+                </a>
+                <a href="https://direct.me/wallet" class="listItem">
+                  <div class="listItemIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M54.03 5.19c1.85 0 3.46 1.05 4.25 2.6H13.91c-.71 0-1.3-.6-1.3-1.28 0-.04.01-.09.01-.13l.1-1.19h41.31m0-5.19H9.97C4.47 0 0 4.47 0 9.97v44.05C0 59.53 4.47 64 9.97 64h44.05c5.51 0 9.97-4.47 9.97-9.97V9.97C64 4.47 59.53 0 54.03 0zM7.44 5.93c-.01.19-.02.37-.02.56 0 3.57 2.92 6.49 6.49 6.49h44.9v6.04H46.97C39.84 19.02 34 24.86 34 32c0 7.14 5.84 12.98 12.98 12.98h11.84v9.05c0 2.64-2.15 4.78-4.78 4.78H9.97c-2.64 0-4.78-2.15-4.78-4.78V9.97c0-1.7.91-3.19 2.25-4.04zm39.53 33.86c-4.29 0-7.79-3.49-7.79-7.79 0-4.29 3.49-7.79 7.79-7.79h11.84v15.58H46.97z" fill="currentColor"></path><path d="M47.91 28.4c-1.99 0-3.6 1.61-3.6 3.6s1.61 3.6 3.6 3.6 3.6-1.61 3.6-3.6-1.61-3.6-3.6-3.6z" fill="currentColor"></path></svg>
+                  </div>
+                  Wallet
+                </a>
+                <a href="https://direct.me/invite" class="listItem">
+                  <div class="listItemIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M56.82 20.89C56.82 9.37 47.45 0 35.93 0S15.05 9.37 15.05 20.89c0 6.75 3.28 13.08 8.78 17.01-5.03 1.79-9.52 4.64-13.35 8.46C3.79 53.05.05 61.95-.05 71.43V72H5.9l.01-.55c.2-16.36 13.67-29.67 30.03-29.67 11.51-.01 20.88-9.38 20.88-20.89zm-5.96 0c0 8.24-6.7 14.93-14.93 14.93S21 29.12 21 20.89 27.7 5.95 35.93 5.95c8.24 0 14.93 6.7 14.93 14.94zM58.62 38.24l-4.22 4.21 6.1 6.1h-4.14c-9.89 0-17.94 8.04-17.95 17.93v5.51h5.95l.01-5.51c0-6.61 5.39-11.99 12-11.99h4.41l-6.38 6.38 4.22 4.21 13.43-13.42-13.43-13.42z" fill="currentColor"></path></svg>
+                  </div>
+                  Invite &amp; Earn
+                </a>
+                <a href="#menuQr" data-toggle="slide" class="listItem">
+                  <div class="listItemIcon">
+                    <img src="index_files/3iSG_002.webp" style="opacity: 0.5">
+                  </div>
+                  Your QR Code
+                </a>
+                            <a href="https://direct.me/support" class="listItem">
+                <div class="listItemIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M31.9 0c-7.3 0-14.7 2.5-20.6 7.5l-.2-.2c-.4-.3-.9-.5-1.4-.5-.5 0-1 .2-1.4.6l-.8.8c-.8.8-.8 2 0 2.8l.2.2C-2.5 23.1-2.5 40.6 7.6 52.6l-.2.2c-.8.8-.8 2 0 2.8l.8.8c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l.2-.2c6 5.1 13.3 7.6 20.7 7.6 7.3 0 14.7-2.5 20.6-7.5l.2.2c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l.8-.8c.8-.8.8-2 0-2.8l-.2-.2c10.1-11.9 10.2-29.4.1-41.3l.2-.2c.8-.8.8-2 0-2.8l-.8-.8c-.4-.4-.9-.6-1.4-.6-.5 0-1 .2-1.4.6l-.2.2C46.7 2.6 39.3 0 31.9 0zM23 19.2l-8-8c4.9-4 10.9-6 16.9-6 6.1 0 12.1 2 17 6.1l-8 8c-2.7-1.9-5.9-2.9-9.1-2.9-3 0-6.1.9-8.8 2.8zM11.2 48.9c-8.1-9.8-8-24.2.1-34l8 8c-3.9 5.4-3.9 12.6-.1 18l-8 8zm41.4.1l-8-8c3.9-5.4 3.9-12.6.1-18l8-8c8 9.8 8 24.2-.1 34zM24.4 27.1c.5 0 1-.2 1.4-.6l.8-.8c.7-.7.8-1.9.1-2.7 1.6-.9 3.4-1.4 5.2-1.4 1.8 0 3.7.5 5.3 1.5-.7.8-.6 2 .1 2.7l.8.8c.4.4.9.6 1.4.6.5 0 .9-.2 1.3-.5 1.9 3.3 1.9 7.3-.1 10.5-.4-.3-.8-.5-1.3-.5s-1 .2-1.4.6l-.8.8c-.7.7-.8 1.9-.1 2.7-1.6.9-3.4 1.4-5.2 1.4-1.8 0-3.7-.5-5.3-1.5.7-.8.6-2-.1-2.7l-.8-.8c-.4-.4-.9-.6-1.4-.6-.5 0-.9.2-1.3.5-1.9-3.3-1.9-7.3.1-10.5.3.3.8.5 1.3.5zm7.5 31.6c-6.1 0-12.1-2-17-6.1l8-8c2.7 1.9 5.9 2.9 9.1 2.9 3.1 0 6.3-.9 8.9-2.8l8 8c-4.9 4-10.9 6-17 6z" fill-rule="nonzero" fill="currentColor"></path></svg>
+                </div>
+                Help &amp; Support
+              </a>
+            </div>
+            <div class="list">
+              <a href="https://direct.me/logout" class="listItem">
+                <div class="listItemIcon">
+                  <svg viewBox="0 0 64 67" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero"><path d="M35 64H3C1.6 64 .4 62.8.4 61.4V2.6C.4 1.2 1.6 0 3 0h32c1.4 0 2.6 1.2 2.6 2.6 0 1.4-1.2 2.6-2.6 2.6H5.6v53.6H35c1.4 0 2.6 1.2 2.6 2.6 0 1.4-1.2 2.6-2.6 2.6z" fill="currentColor"></path><path d="M66.2 30.2L54 17.9c-1-1-2.7-1-3.7 0s-1 2.7 0 3.7l7.8 7.8H31.5c-1.4 0-2.6 1.2-2.6 2.6 0 1.4 1.2 2.6 2.6 2.6h26.7l-7.8 7.8c-1 1-1 2.7 0 3.7.5.5 1.2.8 1.8.8.6 0 1.3-.3 1.8-.8l12.3-12.3c.1-.1.2-.3.3-.4.3-.4.4-.9.4-1.4 0-.7-.3-1.3-.8-1.8z" fill="currentColor"></path></g></svg>
+                </div>
+                Logout
+              </a>
+            </div>
+            <span class="menuCopyright">
+              <a href="https://direct.me/" class="menuCopyrightLogo">
+                <svg viewBox="0 0 911 910" xmlns="http://www.w3.org/2000/svg"><path d="M426.9 1.1C300.4 8.7 181.3 70.2 101.5 168.9 23 266.3-12 390.1 4 514c26.5 204 188.1 365.4 392.5 392 112.3 14.6 227.1-13.5 319.5-78.3 80-56 139.6-135.7 170.6-227.9 24.5-73 30.1-154.3 15.8-229.3C880 253.4 813.7 150.8 716 82.3 632.2 23.5 530.3-5.2 426.9 1.1zM586 183.5c15.4 2.8 31.5 8.1 46.5 15.4 49.2 24.1 82.7 67.9 93.7 122.3 2 9.6 2.3 14.4 2.3 32.3s-.3 22.7-2.3 32.3c-15.3 75.5-75.4 130.8-151.4 139.1-5.4.6-12.6 1.1-16.1 1.1h-6.4l-2.2-10.8c-2.9-13.6-7.2-27-12.7-39.6l-4.3-9.8 3.2.6c1.8.3 8.4.9 14.7 1.2 32.8 1.9 63.5-10 87-33.6 14.1-14.2 24.5-32.2 29.7-51.7 2.5-9 2.7-11.4 2.7-28.8 0-17.5-.2-19.8-2.7-29-5.3-19.5-19-42.5-32.8-54.9-31.1-28-72.3-37.3-112.2-25.5-9.1 2.7-26.7 11.7-34.8 17.8-8.1 6.2-20.3 18.9-25.6 26.7-17.3 25.5-24 58.6-17.8 87.9l1.5 7-22.4 22.4-22.4 22.4-2.2-4.9c-4.4-9.9-10-28.4-12.1-40-3-16.6-3.1-43-.1-59.5 9.6-52.9 41.9-97.3 89.4-122.8 15.7-8.5 38.2-15.8 55.3-18 4.4-.6 9.4-1.3 11-1.5 6.3-.9 34.4.4 43.5 1.9zM570.9 328c9.9 6.3 15.4 15.4 15.4 25.5.1 12.2 5.8 5.9-110.6 122.1-73.9 73.9-107.4 106.7-110.2 107.9-5.8 2.7-15.5 3.2-21.3.9-5.6-2.1-14.6-10.3-17.4-15.9-1.2-2.2-2.3-6.8-2.6-10.2-1-12.6-8.5-4.2 109.7-122.7 84.6-84.8 107.6-107.3 111.6-109.3 4.3-2.1 6.1-2.4 12.6-2 6.6.3 8.4.8 12.8 3.7zm-210.8 65.5c2.6 13.3 6.4 25.6 11.9 38.5 2.7 6.3 4.8 11.6 4.6 11.7-.2.2-3.4-.1-7.2-.7-26.8-3.8-56.1 2.9-79.4 18.2-8.9 5.8-23.8 20.4-29.9 29.3-15.8 22.8-23.2 51.2-20.3 77.4 2.2 19.7 9.2 38.6 20.2 54.5 6 8.7 20.1 22.7 28.9 28.5 30.1 20.3 67.3 25.5 101.3 14.1 39.6-13.3 69.2-47.7 76.3-88.8 2-11.1 1.9-28.5-.1-40.2l-1.6-9.3 21.8-21.8c12.1-12.1 22.2-21.9 22.5-21.9 1.5 0 8.2 18.2 11.4 30.5 4.1 16 5.5 27.2 5.5 43.5-.1 46.3-18.2 89.4-51.4 122.3-24.5 24.3-57.2 41-92.1 47.3-12.2 2.2-42 2.5-54 .6C256.9 715.7 201.3 664 185.4 594c-6.8-30-5-63.6 5.1-93.5 4-12 14.7-32.8 22.3-43.5 8.3-11.7 28.9-32.5 40-40.4 22.6-16 49-26.7 75.2-30.5 12.1-1.8 13.1-1.8 21.9-1.7l8.4.1 1.8 9z" fill="#FF1053" fill-rule="nonzero"></path></svg>              </a>
+              © 2022 - Direct.me, All rights reserved<br><a href="https://direct.me/terms">Terms</a> | <a href="https://direct.me/privacy">Privacy</a></span>
+          </div>
+        </div>
+
+        <div id="menuQr" class="slide ">
+          <div class="modalTitle">
+            <div class="modalTitleInner">
+              <a href="#menuMain" data-toggle="slide" class="modalHeaderBack">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="15 6 9 12 15 18"></polyline>
+</svg>
+
+
+              </a>
+              <div class="modalHeaderIcon">
+                <svg id="Raw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="none"></rect>
+  <rect x="48.00244" y="48" width="64" height="64" rx="8" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+  <rect x="48.00244" y="144" width="64" height="64" rx="8" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+  <rect x="144.00244" y="48" width="64" height="64" rx="8" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
+  <line x1="144.00244" y1="144" x2="144.00244" y2="176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+  <polyline points="144.002 208 176.002 208 176.002 144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+  <line x1="176.00244" y1="160" x2="208.00244" y2="160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+  <line x1="208.00244" y1="192" x2="208.00244" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+</svg>
+              </div>
+              <div>
+                <h3 class="modalHeaderTitle">Your QR Code</h3>
+              </div>
+            </div>
+          </div>
+          <div class="modalBody">
+            <img src="index_files/3iSG.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header fixedProfileHeader" style="position:absolute">
+    <div class="container">
+
+      <a href="https://direct.me/me/appearance" class="button buttonDark hideOnScroll" data-welcome-highlight="theme">
+        Edit Theme
+      </a>
+      <div class="showOnScroll">
+
+                  <a href="#" data-target="#addItemModal" data-toggle="modal" data-content="/me/items/add?initFileUploader" class="button buttonPrimary mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="12" cy="12" r="9"></circle>
+  <line x1="9" y1="12" x2="15" y2="12"></line>
+  <line x1="12" y1="9" x2="12" y2="15"></line>
+</svg>
+
+
+            Add New Item
+          </a>
+          <a href="#" data-target="#addModal" data-toggle="modal" class="button buttonPrimary buttonIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-dollar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"></path>
+  <path d="M12 3v3m0 12v3"></path>
+</svg>
+
+
+          </a>
+              </div>
+
+      <div>
+        <span class="lightswitch lightswitchLarge mr-2">
+          <input type="checkbox" id="profilePreviewToggle" class="profilePreviewToggle" checked="checked">
+          <label for="profilePreviewToggle">Preview</label>
+        </span>
+        <a href="#" data-content="/me/settings" data-toggle="modal" data-target="#profileSettingsModal" class="button buttonDark buttonIcon hideOnScroll">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="5" cy="12" r="1"></circle>
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+</svg>
+
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slides">
+    <div class="slide wasActive" id="meSlide">
+      <div class="meHeader">
+        <div class="containerSm textCenter">
+          <div class="avatar meHeaderAvatar" data-welcome-highlight="avatar">
+            <div class="meAvatarEdit">
+              Edit
+            </div>
+            <div class="filepond--root meAvatarUploader hide filepond--hopper" data-style-panel-layout="compact circle" data-style-button-remove-item-position="left bottom" data-style-button-process-item-position="right bottom" data-style-load-indicator-position="center bottom" data-style-progress-indicator-position="right bottom" data-style-button-remove-item-align="false"><input class="filepond--browser" type="file" id="filepond--browser-okpjbnepo" name="avatar" aria-controls="filepond--assistant-okpjbnepo" aria-labelledby="filepond--drop-label-okpjbnepo" accept="image/png,image/jpeg,image/gif"><div style="height: 100%;"></div><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-okpjbnepo" id="filepond--drop-label-okpjbnepo" aria-hidden="true"><span class="filepond--label-action" tabindex="0">Change photo</span></label></div><div class="filepond--list-scroller"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="true"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root"></div><div class="filepond--panel-bottom filepond--panel-root"></div></div><span class="filepond--assistant" id="filepond--assistant-okpjbnepo" role="status" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"></fieldset></div>
+            <img src="index_files/default.webp" alt="saboox">
+          </div>
+
+          <h1 class="mb-0">
+            saboox                      </h1>
+
+          <div class="linkBox">
+            direct.me/saboox            <a data-welcome-highlight="share" data-welcome-ignore-xs="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+
+
+</a>
+            <input type="text" class="linkBoxInput" value="https://direct.me/saboox">
+            <div class="linkBoxCopied">
+              Copied
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column-4">
+              <a href="https://direct.me/me/followers" class="meStat meStatFollowers">
+                <span class="meStatNumber">0</span>
+                Followers
+              </a>
+            </div>
+            <div class="column-4">
+              <a href="https://direct.me/me/stats" class="meStat meStatVisitors" id="meStats">
+                <div class="meStatsText"><span class="meStatNumber">0</span>Views today</div>
+              </a>
+            </div>
+            <div class="column-4">
+              <div class="meStat meStatItems">
+                <span class="meStatNumber">4</span>
+                Items
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+                          <a href="#" data-target="#addItemModal" data-toggle="modal" data-content="/me/items/add?initFileUploader" class="button buttonPrimary buttonLarge buttonWide" data-welcome-highlight="newitem" data-welcome-ignore-xs="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="12" cy="12" r="9"></circle>
+  <line x1="9" y1="12" x2="15" y2="12"></line>
+  <line x1="12" y1="9" x2="12" y2="15"></line>
+</svg>
+
+
+                Add New Item
+              </a>
+              <a href="#" data-target="#addModal" data-toggle="modal" data-content="/me/access/ideas" class="button buttonPrimary buttonLarge buttonIcon ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-dollar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"></path>
+  <path d="M12 3v3m0 12v3"></path>
+</svg>
+
+
+              </a>
+                                  </div>
+        </div>
+      </div>
+
+      <main>
+
+        <div class="containerSm">
+          <section>
+            <h3 class="mb-3">My Profile &amp; Links</h3>
+            <div class="card welcomeGuideCard">
+  <a href="https://direct.me/me/guide/skip" class="modalClose">
+    ×
+  </a>
+  <div class="cardBody">
+    <a href="#guide" data-target="#guide" data-toggle="modal" data-content="/me/guide" class="flex alignItemsCenter">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 45">
+  <g fill-rule="nonzero" fill="none">
+    <path d="M23.45.92c10.75.7 19.51 9.34 20.34 20.08.57 7.35-2.51 14.01-7.61 18.36-.47.4-.66 1.06-.39 1.62.92 1.95 3.29 3.19 5.99 2.92-2.19 1.45-6.41 1.56-9.33-.4-.79-.53-1.78-.67-2.67-.33-2.95 1.12-6.19 1.63-9.59 1.36-10.73-.87-19.34-9.65-20-20.4C-.63 10.93 10.26.06 23.45.92Z" fill="#FFF"></path>
+    <g fill="#010101">
+      <path d="M11.99 17.58h2.24v10.36h-2.24v-4.07h-4v4.07H5.75V17.58h2.24v4.33h4v-4.33zM22.46 26.78c-.87.85-1.9 1.27-3.07 1.27s-2.14-.37-2.91-1.12c-.77-.75-1.15-1.75-1.15-3s.39-2.25 1.17-2.99c.78-.74 1.7-1.11 2.77-1.11 1.06 0 1.97.33 2.71.99.74.66 1.11 1.57 1.11 2.73v1.19h-5.63c.07.43.29.79.66 1.07.37.28.8.42 1.26.42.76 0 1.38-.26 1.87-.79l1.21 1.34Zm-2.07-4.72c-.3-.26-.66-.39-1.09-.39-.43 0-.82.13-1.17.4s-.56.63-.62 1.08h3.39c-.04-.47-.21-.84-.51-1.09ZM26.44 27.94h-2.16V16.95h2.16zM30.14 27.94h-2.16V16.95h2.16zM39.26 23.95c0 1.16-.39 2.13-1.16 2.92-.78.79-1.75 1.19-2.92 1.19s-2.15-.4-2.92-1.19c-.78-.79-1.16-1.76-1.16-2.92s.39-2.13 1.16-2.93c.78-.79 1.75-1.19 2.92-1.19s2.15.4 2.92 1.19c.78.8 1.16 1.78 1.16 2.93Zm-6 0c0 .65.18 1.18.54 1.59.36.41.82.61 1.38.61.56 0 1.02-.2 1.38-.61.36-.41.54-.94.54-1.59 0-.65-.18-1.19-.54-1.6-.36-.41-.82-.62-1.38-.62-.56 0-1.02.21-1.38.62-.36.42-.54.95-.54 1.6Z"></path>
+    </g>
+  </g>
+</svg>
+      <div>
+        <h2 class="mb-0">Getting started is easy</h2>
+        <p class="mb-0">Tap for a few quick tips</p>
+      </div>
+    </a>
+  </div>
+</div>
+            <div id="profileItems">
+              
+<div id="sortable" class="sortable ui-sortable">
+    <div id="items_841633" class="card editProfileElement editProfileElementLink editProfileElementWithIcon droppable ui-droppable" data-location="me" data-item-id="841633">
+        <div class="editProfileElementContent">
+                        <div class="editProfileElementIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+</svg>
+
+
+          </div>
+        
+        <h2>
+          Follow me on Twitter                  </h2>
+
+                                                
+        <div class="editProfileElementEdit">
+                      <a href="#" data-target="#editShareItem" data-content="/me/items/share/841633" data-toggle="modal" title="Share this item" class="mr-2 textMuted">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="6" cy="12" r="3"></circle>
+  <circle cx="18" cy="6" r="3"></circle>
+  <circle cx="18" cy="18" r="3"></circle>
+  <line x1="8.7" y1="10.7" x2="15.3" y2="7.3"></line>
+  <line x1="8.7" y1="13.3" x2="15.3" y2="16.7"></line>
+</svg>
+
+
+            </a>
+          
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841633?initFileUploader" title="Edit this item" class="button buttonSmall buttonIcon showLg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="5" cy="12" r="1"></circle>
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+</svg>
+
+
+          </a>
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841633?initFileUploader" title="Edit this item" class="button buttonSmall hideLg">
+            Edit
+          </a>
+
+        </div>
+
+        <div class="editProfileElementDelete">
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-slide="#delete" data-content="/me/items/edit/841633?initFileUploader" title="Delete this item">×</a>
+        </div>
+
+      
+      <div class="editProfileElementPosition ui-sortable-handle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <line x1="4" y1="6" x2="20" y2="6"></line>
+  <line x1="4" y1="12" x2="20" y2="12"></line>
+  <line x1="4" y1="18" x2="20" y2="18"></line>
+</svg>
+
+
+      </div>
+
+    </div>
+
+    
+    
+      </div>
+
+  <div id="items_841632" class="card editProfileElement editProfileElementLink editProfileElementWithIcon droppable ui-droppable" data-location="me" data-item-id="841632">
+        <div class="editProfileElementContent">
+                        <div class="editProfileElementIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+  <circle cx="12" cy="12" r="3"></circle>
+  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+</svg>
+
+
+          </div>
+        
+        <h2>
+          Follow me on Instagram                  </h2>
+
+                                                
+        <div class="editProfileElementEdit">
+                      <a href="#" data-target="#editShareItem" data-content="/me/items/share/841632" data-toggle="modal" title="Share this item" class="mr-2 textMuted">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="6" cy="12" r="3"></circle>
+  <circle cx="18" cy="6" r="3"></circle>
+  <circle cx="18" cy="18" r="3"></circle>
+  <line x1="8.7" y1="10.7" x2="15.3" y2="7.3"></line>
+  <line x1="8.7" y1="13.3" x2="15.3" y2="16.7"></line>
+</svg>
+
+
+            </a>
+          
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841632?initFileUploader" title="Edit this item" class="button buttonSmall buttonIcon showLg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="5" cy="12" r="1"></circle>
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+</svg>
+
+
+          </a>
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841632?initFileUploader" title="Edit this item" class="button buttonSmall hideLg">
+            Edit
+          </a>
+
+        </div>
+
+        <div class="editProfileElementDelete">
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-slide="#delete" data-content="/me/items/edit/841632?initFileUploader" title="Delete this item">×</a>
+        </div>
+
+      
+      <div class="editProfileElementPosition ui-sortable-handle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <line x1="4" y1="6" x2="20" y2="6"></line>
+  <line x1="4" y1="12" x2="20" y2="12"></line>
+  <line x1="4" y1="18" x2="20" y2="18"></line>
+</svg>
+
+
+      </div>
+
+    </div>
+
+    
+    
+      </div>
+
+  <div id="items_841631" class="card editProfileElement editProfileElementSupport editProfileElementWithIcon noBilling" data-location="me" data-item-id="841631">
+        <div class="editProfileElementContent">
+              <div class="editProfileElementIcon bgGray">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72" xml:space="preserve"><path d="M2383.7-416.97c-.25-.33-.65-.66-1.26-.67h-.01c-.87 0-1.6.75-1.64 1.67-.04 1.09.77 1.8 2.01 2.85.61.52.65.56.9.77.26-.23.24-.21.9-.77 1.24-1.04 2.05-1.76 2.01-2.85-.04-.92-.77-1.67-1.64-1.67h-.01c-.61 0-1.01.33-1.26.67z" style="fill:#ea2d33" transform="translate(-15596.227 2744.348) scale(6.55913)"></path><path d="M2388.54-413.49a.73.73 0 0 0-1.04 0l-1.82 1.82c-.21.21-.49.32-.78.32h-2.81c-.35 0-.55-.59.01-.73 0 0 2.69 0 2.71-.01.35 0 .69-.33.69-.73 0-.4-.33-.74-.74-.74h-2.77c-.71-.02-.65 0-1.1.45l-2.88 2.88c-.23.23-.31.44-.01.75l1.09 1.09c.21.21.43.29.67.04l.71-.71a.97.97 0 0 1 .47-.27l4.11-.05c.08-.03.49-.05.93-.49l2.57-2.57c.29-.28.28-.76-.01-1.05z" style="fill:#ff7b7b" transform="translate(-15596.227 2744.348) scale(6.55913)"></path><path d="M29.51 31.75c1.06.93 2.18 1.88 3.37 2.89 4 3.41 4.26 3.67 5.9 5.05 1.71-1.51 1.57-1.38 5.9-5.05 1.03-.86 2.01-1.69 2.94-2.5-.58-.25-1.22-.39-1.89-.39H29.51z" style="fill:#681e23"></path></svg>        </div>
+        <h2>Support me</h2>
+        <p class="mb-0 textMuted">Enable support donations directly from
+ your profile. You need to add your payout details so we can pay you 
+before you can accept donations.</p>
+
+        <div class="editProfileElementEdit">
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/support?initFileUploader" title="Edit this item" class="button buttonSmall buttonIcon showLg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="5" cy="12" r="1"></circle>
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+</svg>
+
+
+          </a>
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/support?initFileUploader" title="Edit this item" class="button buttonSmall hideLg">
+            Edit
+          </a>
+        </div>
+
+      
+      <div class="editProfileElementPosition ui-sortable-handle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <line x1="4" y1="6" x2="20" y2="6"></line>
+  <line x1="4" y1="12" x2="20" y2="12"></line>
+  <line x1="4" y1="18" x2="20" y2="18"></line>
+</svg>
+
+
+      </div>
+
+    </div>
+
+    
+          <div class="cardWarning">
+                  <p>
+            You need to add payout details in order to enable this item.
+          </p>
+          <p><a href="https://direct.me/stripe/setup">+ Add payout details</a></p>
+              </div>
+    
+      </div>
+
+  <div id="items_841630" class="card editProfileElement editProfileElementUpdates droppable ui-droppable" data-location="me" data-item-id="841630">
+        <div class="editProfileElementContent">
+      
+        
+        <h2>Get updates about me</h2>
+        <p class="mb-0 textMuted">Encourage users to follow and receive updates from you</p>
+
+        <div class="editProfileElementEdit">
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841630?initFileUploader" title="Edit this item" class="button buttonSmall buttonIcon showLg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <circle cx="5" cy="12" r="1"></circle>
+  <circle cx="12" cy="12" r="1"></circle>
+  <circle cx="19" cy="12" r="1"></circle>
+</svg>
+
+
+          </a>
+          <a href="#" data-toggle="modal" data-target="#addItemModal" data-content="/me/items/edit/841630?initFileUploader" title="Edit this item" class="button buttonSmall hideLg">
+            Edit
+          </a>
+        </div>
+
+      
+      <div class="editProfileElementPosition ui-sortable-handle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <line x1="4" y1="6" x2="20" y2="6"></line>
+  <line x1="4" y1="12" x2="20" y2="12"></line>
+  <line x1="4" y1="18" x2="20" y2="18"></line>
+</svg>
+
+
+      </div>
+
+    </div>
+
+    
+    
+      </div>
+
+</div>
+            </div>
+          </section>
+
+          
+                  </div>
+
+      </main>
+
+      <style id="meStyle">
+    .meHeader::before {
+                background-attachment: fixed;
+                        background-size: cover;
+                        background-image: url('https://cdn.direct.me/themes/3394.svg?1644238693');
+                        background-repeat: no-repeat;
+                        background-position: Center Center;
+                        background-color: #ffda0f;
+                    }
+</style>
+
+    </div>
+
+    <div id="meProfilePreview" class="slide active" data-src="/saboox">
+<div class="headerSpacer"></div>
+
+<main id="profile" data-track-view="{&quot;profileId&quot;:&quot;3iSG&quot;,&quot;viewerId&quot;:&quot;3iSG&quot;}" data-track-view-handle="saboox" data-track-view-domain="false">
+    <div class="containerSm">
+    <div class="profileHeader">
+      <span class="profileHeaderAvatar profileHeaderAvatarRound">
+        <img id="profileAvatar" src="index_files/default.webp" alt="saboox">
+              </span>
+      <h1>
+        saboox              </h1>
+      <p class="bio">
+                  <a href="https://direct.me/saboox">@saboox</a>
+              </p>
+          </div>
+
+    <div>
+      
+  
+                  <a href="https://twitter.com/_saboox_" target="_blank" rel="noopener noreferrer" class="profileElement profileElementLink button-style-pill profileElementWithIcon" data-accountid="3iSG" data-itemid="6kcV" data-location="profile" data-track-click="{&quot;profileId&quot;:&quot;3iSG&quot;,&quot;byId&quot;:&quot;3iSG&quot;,&quot;itemId&quot;:&quot;6kcV&quot;,&quot;location&quot;:&quot;profile&quot;}">
+                  
+          <div class="profileElementContent">
+              <div class="profileElementIcon">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+</svg>
+
+
+  </div>
+            <h2>Follow me on Twitter</h2>
+                                  </div>
+          </a>
+                
+        
+
+  
+                  <a href="https://instagram.com/_saboox_" target="_blank" rel="noopener noreferrer" class="profileElement profileElementLink button-style-pill profileElementWithIcon" data-accountid="3iSG" data-itemid="6kcU" data-location="profile" data-track-click="{&quot;profileId&quot;:&quot;3iSG&quot;,&quot;byId&quot;:&quot;3iSG&quot;,&quot;itemId&quot;:&quot;6kcU&quot;,&quot;location&quot;:&quot;profile&quot;}">
+                  
+          <div class="profileElementContent">
+              <div class="profileElementIcon">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+  <circle cx="12" cy="12" r="3"></circle>
+  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+</svg>
+
+
+  </div>
+            <h2>Follow me on Instagram</h2>
+                                  </div>
+          </a>
+                
+        
+
+  
+                      
+        
+
+                  </div>
+
+    
+    
+    <div class="profileSocialIcons profileSocialIconsBottom">
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+      </div>
+  </main>
+
+  <link href="index_files/css2.css" rel="stylesheet">
+
+
+<style>
+  :root {
+    --buttonColor: #ffffff;
+    --headlineColor: #000000;
+    --highlightColor: #e06500;
+    --textColor: #000000;
+    --iconColor: var(--white);
+    --iconBackgroundColor: var(--highlightColor);
+    --socialIconColor: var(--white);
+    --socialIconBackgroundColor: var(--highlightColor);
+
+    --font: 'Bebas Neue';
+    --backgroundAttachment: fixed;
+    --backgroundSize: cover;
+    --backgroundRepeat: no-repeat;
+    --backgroundPosition: Center Center;
+
+    --avatarShadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1), 0 32px 64px rgba(0, 0, 0, 0.1);
+    --backgroundImage: url('https://cdn.direct.me/themes/3394.svg?1644238693') !important;
+    --backgroundColor: #ffda0f;
+    --borderRadius: 30px;
+    --avatarBorderRadius: 50%;
+      }
+
+  #profile {
+    font-family: var(--font), serif !important;
+    background-attachment: var(--backgroundAttachment) !important;
+    background-size: var(--backgroundSize) !important;
+    background-repeat: var(--backgroundRepeat) !important;
+    background-position: var(--backgroundPosition) !important;
+    color: var(--headlineColor) !important;
+    background-image: var(--backgroundImage) !important;
+    background-color: var(--backgroundColor) !important;
+  }
+
+  #profile h1 {
+    font-size: 2rem;
+  }
+
+  #profile h2 {
+    font-size: 1rem;
+  }
+
+  #profile, #profile p, #profile h3 {
+    font-size: 0.875rem;
+  }
+
+  #profile h1,
+  #profile .bio,
+  #profile .bio a,
+  #profile h1 a {
+    color: var(--headlineColor) !important;
+  }
+
+  #profile .profileElementPrice {
+    border-radius: var(--borderRadius);
+  }
+
+  #profile .profileElementEmbed {
+    border-radius: var(--borderRadius) !important;
+  }
+
+  #profile .profileSocialIcon {
+    border-radius: var(--borderRadius);
+    background-color: var(--socialIconBackgroundColor) !important;
+    color: var(--socialIconColor) !important;
+  }
+
+  #profile .account-card {
+    border-radius: var(--borderRadius);
+    background-color: var(--buttonColor) !important;
+  }
+
+  #profile .profileHeaderAvatar img {
+    border-radius: var(--avatarBorderRadius);
+    box-shadow: var(--avatarShadow);
+  }
+
+  #profile .profileHeaderAvatar {
+    border-radius: var(--avatarBorderRadius);
+  }
+
+  #profile .top8Avatar {
+    border-radius: var(--avatarBorderRadius);
+  }
+
+  #profile .profileElement {
+    background-color: var(--buttonColor);
+  }
+
+  #profile .button-style-draw-border {
+    box-shadow: inset 0 0 0 4px var(--buttonColor) !important;
+  }
+
+  #profile .button-style-retro,
+  #profile .button-draw-border,
+  #profile .button-style-bubble {
+    border-color: var(--buttonColor) !important;
+    background-color: transparent;
+  }
+
+  #profile .button-style-retro::before {
+    background-color: rgba(255, 255, 255, .4);
+  }
+
+  #profile .button-style-retro:hover::before {
+    background-color: rgba(255, 255, 255, .6);
+  }
+
+  #profile .button-style-fade-out::before {
+    background-color: var(--buttonColor) !important;
+  }
+
+  #profile .button-style-fade-out::after {
+    box-shadow: inset 0 0 0 1px var(--buttonColor) !important;
+  }
+
+  #profile .button-style-fade-out,
+  #profile .button-style-thin {
+    background-color: transparent !important;
+  }
+
+  #profile .button-style-thin::after {
+    background-color: var(--buttonColor) !important;
+  }
+
+  #profile .button-style-thin::before {
+    border-top-color: var(--buttonColor) !important;
+    border-bottom-color: var(--buttonColor) !important;
+  }
+
+  #profile .button-style-bubble,
+  #profile .button-style-draw-border {
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  #profile .button-style-bubble:hover,
+  #profile .button-style-draw-border:hover {
+    background-color: rgba(255, 255, 255, .6);
+  }
+
+  #profile .profileElement:not(.profileElementWithImage),
+  #profile .profileElement:not(.profileElementWithImage) p,
+  #profile .profileElement:not(.profileElementWithImage) h2,
+  #profile .profileElement:not(.profileElementWithImage) h3 {
+    color: var(--textColor) !important;
+  }
+
+  #profile .profileElementFolder:not(.active) {
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.15),
+      0 8px 0 -3px rgba(255, 255, 255, .75),
+      0 8px 1px -2px rgba(0, 0, 0, 0.15),
+      0 16px 0 -6px rgba(255, 255, 255, .5),
+      0 16px 1px -5px rgba(0, 0, 0, 0.15);
+  }
+
+  #profile .blockquote p {
+    color: var(--textColor) !important;
+    font-size: 2rem;
+  }
+
+  #profile .profileElementUpdates p {
+    color: var(--textColor) !important;
+  }
+
+  #profile .profileElementUpdates a {
+    color: var(--textColor) !important;
+  }
+
+  .accessViewProfile .inboxAvatar {
+    border: 3px solid var(--highlightColor);
+  }
+
+  .loadingAvatar::before,
+  .loadingAvatar::after {
+    border: var(--highlightColor) solid 8px !important;
+  }
+
+  #profile .button-style-draw-border:hover::before,
+  #profile .button-style-draw-border:hover::after {
+    border-color: var(--highlightColor) !important;
+  }
+
+  #profile .button-style-push-me {
+    box-shadow: -6px 6px 0 var(--highlightColor) !important;
+  }
+
+  #profile .button-style-push-me:hover {
+    box-shadow: -3px 3px 0 var(--highlightColor) !important;
+  }
+
+  #profile .button-style-push-me::after {
+    background-color: var(--highlightColor) !important;
+  }
+
+  #profile .button-style-push-me::before {
+    background-color: var(--highlightColor) !important;
+  }
+
+  #profile .buttonPrimary {
+    background: var(--iconBackgroundColor) !important;
+    color: var(--iconColor) !important;
+  }
+
+  #profile .profileElementIcon,
+  #profile .profileElementSmallImage {
+    background-color: var(--iconBackgroundColor) !important;
+    border-radius: var(--borderRadius);
+    color: var(--iconColor);
+  }
+
+  #profile .profileElementDateMonth {
+    background-color: var(--highlightColor) !important;
+  }
+
+  .profileFooterBlock p,
+  .profileHeaderBlock p {
+    color: var(--headlineColor) !important;
+  }
+
+  .inboxSnippet a {
+    color: var(--headlineColor) !important;
+  }
+
+
+  #profile .poweredBy p {
+    color: var(--headlineColor) !important;
+  }
+
+  #profile .powerIcon g {
+    fill: var(--headlineColor) !important;
+  }
+
+  #profile .inboxNameA,
+  #profile .inboxSnippetA,
+  #profile .inboxSnippetA a {
+    color: var(--headlineColor) !important;
+  }
+
+  #profile .inboxBack path {
+    fill: var(--headlineColor) !important;
+  }
+
+  #profile .viewFolder {
+    color: var(--headlineColor) !important;
+  }
+
+  #profile .item-list>h2 {
+    color: var(--headlineColor) !important;
+  }
+</style>
+
+<style class="embedly-css">
+  :root {
+    --highlightColor: #e06500;
+    --textColor: #000000;
+    --font: 'Bebas Neue';
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  .profileElementEmbed {
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .embedly-card-hug {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .embedly-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body#cards {
+    padding: 0 !important;
+  }
+
+  body#cards .card {
+    padding: 0;
+    font-family: var(--font), serif !important;
+  }
+
+  body#cards .card .txt-bd {
+    padding: 1rem;
+  }
+
+  body#cards .card {
+    color: var(--textColor);
+  }
+
+  body#cards .card .description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  body#cards .card .action {
+    color: var(--highlightColor);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  body#cards .card .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  body#cards .card .title a {
+    color: var(--textColor);
+    font-weight: 600;
+  }
+
+  .hdr {
+    display: none;
+  }
+
+  .twitter-tweet {
+    max-width: 100%;
+  }
+</style>
+
+
+<div class="modal" id="profileModal">
+  <div class="modalBody">
+    <div class="list">
+      
+      <a href="https://direct.me/explore" class="listItem">
+        <div class="listItemIcon">
+          <svg viewBox="0 0 911 910" xmlns="http://www.w3.org/2000/svg"><path d="M426.9 1.1C300.4 8.7 181.3 70.2 101.5 168.9 23 266.3-12 390.1 4 514c26.5 204 188.1 365.4 392.5 392 112.3 14.6 227.1-13.5 319.5-78.3 80-56 139.6-135.7 170.6-227.9 24.5-73 30.1-154.3 15.8-229.3C880 253.4 813.7 150.8 716 82.3 632.2 23.5 530.3-5.2 426.9 1.1zM586 183.5c15.4 2.8 31.5 8.1 46.5 15.4 49.2 24.1 82.7 67.9 93.7 122.3 2 9.6 2.3 14.4 2.3 32.3s-.3 22.7-2.3 32.3c-15.3 75.5-75.4 130.8-151.4 139.1-5.4.6-12.6 1.1-16.1 1.1h-6.4l-2.2-10.8c-2.9-13.6-7.2-27-12.7-39.6l-4.3-9.8 3.2.6c1.8.3 8.4.9 14.7 1.2 32.8 1.9 63.5-10 87-33.6 14.1-14.2 24.5-32.2 29.7-51.7 2.5-9 2.7-11.4 2.7-28.8 0-17.5-.2-19.8-2.7-29-5.3-19.5-19-42.5-32.8-54.9-31.1-28-72.3-37.3-112.2-25.5-9.1 2.7-26.7 11.7-34.8 17.8-8.1 6.2-20.3 18.9-25.6 26.7-17.3 25.5-24 58.6-17.8 87.9l1.5 7-22.4 22.4-22.4 22.4-2.2-4.9c-4.4-9.9-10-28.4-12.1-40-3-16.6-3.1-43-.1-59.5 9.6-52.9 41.9-97.3 89.4-122.8 15.7-8.5 38.2-15.8 55.3-18 4.4-.6 9.4-1.3 11-1.5 6.3-.9 34.4.4 43.5 1.9zM570.9 328c9.9 6.3 15.4 15.4 15.4 25.5.1 12.2 5.8 5.9-110.6 122.1-73.9 73.9-107.4 106.7-110.2 107.9-5.8 2.7-15.5 3.2-21.3.9-5.6-2.1-14.6-10.3-17.4-15.9-1.2-2.2-2.3-6.8-2.6-10.2-1-12.6-8.5-4.2 109.7-122.7 84.6-84.8 107.6-107.3 111.6-109.3 4.3-2.1 6.1-2.4 12.6-2 6.6.3 8.4.8 12.8 3.7zm-210.8 65.5c2.6 13.3 6.4 25.6 11.9 38.5 2.7 6.3 4.8 11.6 4.6 11.7-.2.2-3.4-.1-7.2-.7-26.8-3.8-56.1 2.9-79.4 18.2-8.9 5.8-23.8 20.4-29.9 29.3-15.8 22.8-23.2 51.2-20.3 77.4 2.2 19.7 9.2 38.6 20.2 54.5 6 8.7 20.1 22.7 28.9 28.5 30.1 20.3 67.3 25.5 101.3 14.1 39.6-13.3 69.2-47.7 76.3-88.8 2-11.1 1.9-28.5-.1-40.2l-1.6-9.3 21.8-21.8c12.1-12.1 22.2-21.9 22.5-21.9 1.5 0 8.2 18.2 11.4 30.5 4.1 16 5.5 27.2 5.5 43.5-.1 46.3-18.2 89.4-51.4 122.3-24.5 24.3-57.2 41-92.1 47.3-12.2 2.2-42 2.5-54 .6C256.9 715.7 201.3 664 185.4 594c-6.8-30-5-63.6 5.1-93.5 4-12 14.7-32.8 22.3-43.5 8.3-11.7 28.9-32.5 40-40.4 22.6-16 49-26.7 75.2-30.5 12.1-1.8 13.1-1.8 21.9-1.7l8.4.1 1.8 9z" fill="#FF1053" fill-rule="nonzero"></path></svg>        </div>
+        <div class="listItemBody">
+          Explore Direct.me
+          <span class="listItemInfo">Find celebrities, influencers, sports clubs and more.</span>
+        </div>
+        <div class="listItemIcon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+
+
+        </div>
+      </a>
+                                            <a href="https://direct.me/saboox/access" class="listItem">
+        <div class="listItemIcon">
+          <img src="index_files/default.webp" alt="saboox" class="account-card-avatar" style="border-radius:50%">
+        </div>
+        <div class="listItemBody">
+          Connect with saboox          <span class="listItemInfo">Video shoutouts, phone calls and more</span>
+        </div>
+        <div class="listItemIcon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+
+
+        </div>
+      </a>
+      
+          </div>
+
+  </div>
+</div>
+
+<div class="modal" id="profileReportModal"></div>
+
+
+<script>
+  window.onload = function() {
+    $(function() {
+      $(window).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos > 100) {
+          $('.fixedProfileHeader').addClass('scrolled');
+        } else {
+          $('.fixedProfileHeader').removeClass('scrolled');
+        }
+      });
+    });
+  }
+</script>
+
+
+
+
+    <link rel="stylesheet" href="index_files/animate2.css">
+
+
+<script src="index_files/faviconSet.js"></script></div>
+
+  </div>
+
+  <div class="modal" id="addModal">
+    <button class="modalClose" data-dismiss="modal">
+      ×
+    </button>
+
+    <div class="modalTitle">
+      <div class="modalTitleInner">
+        <div class="modalHeaderIcon">
+          <svg version="1.1" id="svg9991" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 605.354 567.166" style="enable-background:new 0 0 605.3537598 567.1662598" xml:space="preserve"><style>.st2{fill:#163435}</style><path d="M148.827 269.506C66.762 269.506 0 336.268 0 418.334s66.762 148.832 148.827 148.832c82.069 0 148.832-66.766 148.832-148.832 0-82.066-66.767-148.828-148.832-148.828zm15.635 216.49v3.266c0 8.621-6.99 15.612-15.611 15.612a15.569 15.569 0 0 1-2.078-.142c-.1-.013-.2-.023-.299-.038-7.502-1.138-13.254-7.612-13.254-15.43v-1.505c-7.2-1.26-13.772-3.95-22.07-9.383-7.216-4.722-9.236-14.397-4.514-21.612a15.58 15.58 0 0 1 11.372-6.97c.03 0 .06 0 .09-.007.466-.048.932-.08 1.4-.087a15.547 15.547 0 0 1 8.764 2.55c5.217 3.413 8.015 4.664 12.626 5.091h.067c.406.037.824.068 1.262.092.901.051 1.874.082 2.945.096h.06c1.063.012 2.217.01 3.495 0 .226 0 .446-.01.666-.02.091-.007.185-.007.274-.008.03 0 .06-.008.091-.008a15.7 15.7 0 0 0 .798-.066c.06-.007.113-.016.17-.023a16.165 16.165 0 0 0 1.483-.246 14.02 14.02 0 0 0 5.794-2.716c.023-.015.037-.032.06-.048 3.388-2.728 5.015-6.668 5.484-9.452.706-4.174-.127-9.728-7.824-12.466-11.88-4.205-25.873-9.539-35.667-17.218-21.497-16.856-14.897-55.242 13.165-65.448v-2.26c0-7.814 5.74-14.283 13.232-15.428.127-.019.256-.032.384-.048.138-.018.276-.039.414-.052a15.9 15.9 0 0 1 1.597-.08l.012.01c8.622 0 15.612 6.989 15.612 15.61v1.285c10.342 3.049 17.576 9.488 17.576 9.488 6.3 5.833 6.715 15.663.91 22a15.557 15.557 0 0 1-12.298 5.041 15.557 15.557 0 0 1-9.744-4.05c-2.518-1.865-5.86-3.066-9.592-3.226a19.517 19.517 0 0 0-1.113-.016 21.38 21.38 0 0 0-5.906.934c-4.188 1.262-5.305 5.577-5.549 6.87-.515 2.692.216 4.505.6 4.807 6.355 4.985 19.04 9.606 26.82 12.36 41.136 14.552 36.119 69.27-1.704 82.94z" style="fill:#126872"></path><g id="layer1" transform="translate(668.035 -481.688)"><path d="M-303.677 481.688c-132.892 0-242.893 108.111-242.893 241.001 0 32.981 6.782 64.55 19.001 93.379a15.497 15.497 0 0 1 5.978-2.258c.126-.02.255-.032.384-.048.137-.018.275-.039.413-.052.526-.054 1.059-.08 1.597-.08l.012.01c8.623 0 15.612 6.989 15.612 15.61v1.285c10.343 3.049 17.576 9.488 17.576 9.488 6.3 5.832 6.716 15.663.911 22a15.557 15.557 0 0 1-12.299 5.04c-.309-.014-.617-.05-.925-.083 44.508 59.6 115.51 98.598 194.633 98.598 132.888 0 240.996-109.998 240.996-242.889 0-132.89-108.108-241.001-240.996-241.001zm106.175 264.79h-82.705v84.28c0 13.028-10.611 23.63-23.63 23.63-13.028 0-23.631-10.602-23.631-23.63v-84.28h-84.28c-13.027 0-23.63-10.603-23.63-23.631s10.603-23.63 23.63-23.63h84.28v-82.705c0-13.028 10.603-23.631 23.632-23.631 13.018 0 23.63 10.603 23.63 23.63v82.705h82.704c13.02 0 23.63 10.603 23.63 23.631s-10.61 23.63-23.63 23.63z" style="fill:#18c29c" id="g11367"></path></g><path class="st2" d="M141.914 333.566c.401-.199.812-.38 1.232-.544.087-.034.173-.07.26-.103a15.38 15.38 0 0 1 1.183-.381c.11-.032.22-.07.331-.098.5-.129 1.006-.239 1.523-.318.127-.019.256-.032.384-.048.138-.018.276-.039.414-.052a15.9 15.9 0 0 1 1.597-.08l.012.01c8.622 0 15.612 6.989 15.612 15.61v1.285c10.342 3.049 17.576 9.488 17.576 9.488 6.3 5.833 6.715 15.663.91 22a15.557 15.557 0 0 1-12.298 5.041c-.31-.015-.617-.05-.925-.084 29.522 39.534 70.703 69.995 118.178 86.029 6.296-16.47 9.756-34.33 9.756-52.987 0-82.066-66.767-148.828-148.832-148.828-8.655 0-17.137.75-25.39 2.176 2.831 21.902 8.655 42.942 17.029 62.698a15.569 15.569 0 0 1 1.448-.814zm4.529-1.444z"></path><path class="st2" d="M169.725 385.292c.308.033.616.069.925.084-.31-.015-.617-.05-.925-.084zm-26.579-52.27zm1.443-.484zm-2.807 1.094z"></path></svg>        </div>
+        <div>
+          <h3 class="modalHeaderTitle">Earning Opportunities</h3>
+          <p class="modalHeaderText">Generate revenue from your link in bio</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalBody">
+      <div class="list">
+        <a href="#addItemModal" data-target="#addItemModal" data-toggle="modal" data-content="/me/access/ideas" class="listItem">
+          <div class="listItemIcon">
+
+          </div>
+          <div class="listItemBody">
+            Direct Access
+            <span class="listItemInfo">Offer video messages, phone calls and more</span>
+          </div>
+          <div class="listItemIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+
+
+          </div>
+        </a>
+        <a href="#" data-target="#addItemModal" data-toggle="modal" data-content="/me/support?initFileUploader" class="listItem">
+          <div class="listItemIcon">
+
+          </div>
+          <div class="listItemBody">
+            Support me
+            <span class="listItemInfo">Enable followers to show you support financially</span>
+          </div>
+          <div class="listItemIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+
+
+          </div>
+        </a>
+
+                <a href="#addItemModal" data-target="#addItemModal" data-toggle="modal" data-content="/invite" class="listItem">
+          <div class="listItemIcon">
+
+          </div>
+          <div class="listItemBody">
+            Refer Friends
+            <span class="listItemInfo">Refer friends to join direct.me and earn money.</span>
+          </div>
+          <div class="listItemIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal confirmClose" id="addItemModal" data-on-dismiss-callback="closeAddItemModalCallback" data-content="/me/items/add"></div>
+
+
+
+
+
+<script>
+  window.onload = function() {
+    
+    $(function() {
+      $(window).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos > 500) {
+          $('.fixedProfileHeader').addClass('scrolled');
+        } else {
+          $('.fixedProfileHeader').removeClass('scrolled');
+        }
+      });
+    });
+
+  }
+</script>
+
+
+
+<div id="loginOrRegister" class="modal">
+  <div class="modalOverlayFeature containerSm animate__animated animate__fadeIn" style="background-image: url('/static/img/homepage/main-home-banner.jpg');background-size:cover; background-position:center center"></div>
+  <div class="modalWithFeaturedOverlay containerSm">
+    <button class="modalClose" data-dismiss="modal">
+      ×
+    </button>
+    <div class="slides">
+      <div class="slide active" id="registerSlide">
+        
+<div class="modalHeader textCenter">
+      <img src="index_files/gift_heart.gif" style="width:4rem;height:4rem">
+    <h3 class="mb-0">Sign up for the most powerful link in bio</h3>
+    <p class="mb-0">It's absolutely free, no subscription ever!</p>
+  </div>
+
+<div class="modalBody textCenter">
+  <form method="post" action="/register" id="registerForm">
+    <div class="list">
+      <div class="listItem">
+        <div class="input">
+          <input placeholder="Bob" id="reg_name" name="reg_name">
+          <label for="reg_name">
+            Your Name
+            <span class="inputInfo">This will be displayed on your profile.</span>
+          </label>
+        </div>
+      </div>
+      <div class="listItem">
+        <div class="input">
+          <div class="fx-relay-email-input-wrapper"><input type="email" placeholder="you@email.com" id="reg_email" name="reg_email" value="amirmeta219@gmail.com" style="padding-right: 42px;"><div class="fx-relay-icon" style="top: 0px; bottom: 0px;"><button class="fx-relay-button" id="fx-relay-button" type="button" title="Generate New Alias" style="background-image: url(&quot;moz-extension://0dcf23b6-503e-48ad-a05c-ffc6e79fa708/icons/make-new-alias.png&quot;);"></button></div></div>
+          <label for="reg_email">
+            Email Address
+            <span class="inputInfo">You will need to verify your email address</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="listItem">
+        <div class="input">
+          <input type="password" placeholder="Password" id="reg_password" name="reg_password">
+          <label for="reg_password">Password
+            <span class="inputInfo">
+              Min. 6 characters including a number and letter
+            </span>
+          </label>
+        </div>
+
+        <div class="listItemIcon">
+          <span id="password_error" style="display: none;color:var(--red)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <line x1="18" y1="6" x2="6" y2="18"></line>
+  <line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+
+          </span>
+          <span id="password_success" style="display: none;color:var(--green)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M5 12l5 5l10 -10"></path>
+</svg>
+
+
+          </span>
+        </div>
+      </div>
+
+      <div class="listItem requiredListItem">
+        <div class="input">
+          <input type="handle" placeholder="direct.me/yourname" id="handle" name="handle">
+          <label for="handle">
+            Handle
+            <span class="inputInfo">This will be your username on the website.</span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+    <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="index_files/anchor.html" role="presentation" name="a-47vyqnirsrr2" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="overflow-y:hidden;"></textarea></div><iframe style="display: none;"></iframe></div><button type="submit" class="button buttonPrimary buttonLarge buttonWide g-recaptcha" data-sitekey="6LegS_McAAAAAP3oqmYDtYU0XoSI2mLCJrNiv769" data-callback="submitForm">
+      Next    </button>
+
+    <input type="hidden" name="form_action" value="register">
+    <input type="hidden" name="reg_source" value="registerPage">
+    <input type="hidden" name="csrf_token" value="104ab694c4b7fe238ce2026c480f50040d8a88a4828f89db6c379722b32a01fd">
+      </form>
+  <div class="mt-4 textCenter">
+    <p>Already a member? <strong><a href="#loginSlide" data-toggle="slide">Login here</a></strong></p>
+  </div>
+
+  <p class="reCAPTCHA"><img src="index_files/rcap.png"> This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="blank">Terms of Service</a> apply.</p>
+</div>
+
+
+<script src="index_files/api.js"></script>
+<script>
+  function submitForm() {
+    document.getElementById('registerForm').submit();
+  }
+</script>
+      </div>
+      <div class="slide" id="loginSlide">
+        
+<div class="modalHeader textCenter">
+  <img src="index_files/gift_heart.gif" style="width:4rem;height:4rem">
+  <h3>Welcome back</h3>
+</div>
+<div class="modalBody">
+  <form method="post" action="/login">
+    <div class="list">
+      <div class="listItem">
+        <div class="input">
+          <div class="fx-relay-email-input-wrapper"><input type="email" placeholder="you@email.com" id="login_email" name="login_email" value="amirmeta219@gmail.com" style="padding-right: 42px;"><div class="fx-relay-icon" style="top: 0px; bottom: 0px;"><button class="fx-relay-button" id="fx-relay-button" type="button" title="Generate New Alias" style="background-image: url(&quot;moz-extension://0dcf23b6-503e-48ad-a05c-ffc6e79fa708/icons/make-new-alias.png&quot;);"></button></div></div>
+          <label for="login_email">Email Address</label>
+        </div>
+      </div>
+      <div class="listItem">
+        <div class="input">
+          <input type="password" placeholder="Password" id="login_password" name="login_password" value="">
+          <label for="login_password">Password</label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="button buttonPrimary buttonLarge buttonWide">
+      Login
+    </button>
+    <input type="hidden" name="csrf_token" value="104ab694c4b7fe238ce2026c480f50040d8a88a4828f89db6c379722b32a01fd">
+      </form>
+
+  <div class="mt-4 textCenter">
+    <p>Forgotten your password? <strong><a href="#" data-content="/iforgot" data-toggle="modal" data-target="#forgot">Request a new one</a></strong></p>
+    <p>Need to register? <strong><a href="#registerSlide" data-toggle="slide">Get started now</a></strong></p>
+  </div>
+</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="forgot" class="modal"></div>
+
+
+
+  
+
+<div class="overlay" data-dismiss="modal"></div>
+<div id="alerts">
+  </div>
+
+<script src="index_files/jquery.js"></script>
+
+    <link rel="stylesheet" href="index_files/animate2.css">
+
+
+<script src="index_files/filepond.js"></script><link rel="stylesheet" href="index_files/filepond.css"><script src="index_files/jquery-ui.js"></script><script src="index_files/jquery_002.js"></script>
+<script src="index_files/lazyload.js"></script>
+<script async="" src="index_files/site.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="index_files/js_002"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-132400210-1');
+</script>
+
+
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "c96d0cc0-984b-4a8c-8505-93fc70e08a1e";
+    (function() {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+
+  
+  <script>
+    $crisp.push(["set", "user:email", ["amirmeta219@gmail.com", "2e33bd6fe981af67c0d5e218eb501ba7976c9e358397388162eaceb370887d3f"]]);
+    $crisp.push(["set", "user:nickname", ["saboox"]]);
+    $crisp.push(["set", "user:avatar", ["https://cdn.direct.me/avatars/default.png"]]);
+    //$crisp.push(["safe", true]);
+  </script>
+  
+  
+
+<!-- Default Statcounter code for Direct.me https://direct.me -->
+<script type="text/javascript">
+  var sc_project = 12161422;
+  var sc_invisible = 1;
+  var sc_security = "4a257bc2";
+  var sc_https = 1;
+</script>
+<script type="text/javascript" src="index_files/counter.js" async=""></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics Made Easy -
+StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12161422/0/4a257bc2/1/" alt="Web Analytics Made Easy - StatCounter"></a></div>
+</noscript>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-aa4c79310949334ef1d","applicationID":"447126811","transactionName":"ZFZbbEFZWxBWVBdYCl0cbEpaF1gGGUcLQQ==","queueTime":0,"applicationTime":17,"atts":"SBFYGglDSB4=","errorBeacon":"bam.nr-data.net","agent":""}</script><script defer="defer" src="index_files/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d9ccac93f419158&quot;,&quot;token&quot;:&quot;3f6a0b96378c46a985b2428a6832a3dd&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+
+<iframe name="__privateStripeMetricsController2120" allowtransparency="true" scrolling="no" allow="payment *" src="index_files/m-outer-08a1fefa46cfc8cc94fc477ddcdb0555.html" aria-hidden="true" tabindex="-1" style="border: medium none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;" frameborder="0"></iframe><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="index_files/box-acca23410e696f2ca3087d947271c3d0.html"></iframe><div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div><div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;"><iframe title="recaptcha challenge expires in two minutes" src="index_files/bframe.html" style="width: 100%; height: 100%;" name="c-47vyqnirsrr2" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div><div class="crisp-client"><div class="cc-l3zb"><div class="cc-lcor"><style type="text/css">.crisp-client .cc-kv6t .cc-6zjc,
+.crisp-client .cc-kv6t .cc-1mk2:hover {
+  color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-jq4y,
+.crisp-client .cc-kv6t .cc-5lan:hover {
+  color: #F01D65 !important;
+}
+
+.crisp-client .cc-kv6t .cc-k5w4 {
+  background-color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-5ekd {
+  background-color: #A0073C !important;
+}
+
+.crisp-client .cc-kv6t .cc-16jc {
+  background-color: #DB165A !important;
+}
+
+.crisp-client .cc-kv6t .cc-1ada,
+.crisp-client .cc-kv6t .cc-ew5j:before,
+.crisp-client .cc-kv6t .cc-ew5j:after {
+  background-color: #F01D65 !important;
+}
+
+.crisp-client .cc-kv6t .cc-y5jx {
+  background-color: #F7F2F2 !important;
+}
+
+.crisp-client .cc-kv6t .cc-y6ot,
+.crisp-client .cc-kv6t .cc-183m:hover {
+  background-color: #F9F9F9 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1ybb {
+  background-image: linear-gradient(125deg, #F01D65 -10%, #A0073C 100%) !important;
+}
+
+.crisp-client .cc-kv6t .cc-ofgq,
+.crisp-client .cc-kv6t .cc-fg2d:hover {
+  border-color: #FFFFFF !important;
+}
+
+.crisp-client .cc-kv6t .cc-2ydi {
+  border-color: rgba(160, 7, 60, 0.175) !important;
+}
+
+.crisp-client .cc-kv6t .cc-1aev,
+.crisp-client .cc-kv6t .cc-2hzo:hover,
+.crisp-client .cc-kv6t .cc-18sf:before,
+.crisp-client .cc-kv6t .cc-18sf:after {
+  border-color: #F01D65 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1nph {
+  border-color: rgba(240, 29, 101, 0.15) !important;
+}
+
+.crisp-client .cc-kv6t .cc-1o96 {
+  border-top-color: #F01D65 !important;
+}
+
+.crisp-client .cc-kv6t .cc-ve3u,
+.crisp-client .cc-kv6t .cc-1nmg:hover {
+  border-color: #F7F2F2 !important;
+}
+
+.crisp-client .cc-kv6t .cc-clw4::placeholder {
+  color: #F26C9A !important;
+}
+
+.crisp-client .cc-kv6t .cc-2n8m::placeholder {
+  color: #F26C9A !important;
+}
+
+.crisp-client .cc-kv6t .cc-3x4f,
+.crisp-client .cc-kv6t .cc-1afs:hover,
+.crisp-client .cc-kv6t .cc-3x4f:hover,
+.crisp-client .cc-kv6t .cc-1afs:active,
+.crisp-client .cc-kv6t .cc-3x4f:active,
+.crisp-client .cc-kv6t .cc-1c1d:hover .cc-1f87,
+.crisp-client .cc-kv6t .cc-1c1d .cc-1f87:active {
+  background: #A0073C !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu,
+.crisp-client .cc-kv6t .cc-caj5:hover {
+  background: #CE1454 !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu:hover,
+.crisp-client .cc-kv6t .cc-caj5:active {
+  background: #B3124A !important;
+}
+
+.crisp-client .cc-kv6t .cc-4xbu:active {
+  background: #A0073C !important;
+}
+
+.crisp-client .cc-kv6t .cc-g73w:hover .cc-199t {
+  background: #CE1454 !important;
+}
+
+.crisp-client .cc-kv6t .cc-g73w .cc-199t:active {
+  background: #B3124A !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur,
+.crisp-client .cc-kv6t .cc-7rgf[data-active="true"] {
+  background: #F01D65 !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur:hover,
+.crisp-client .cc-kv6t .cc-7rgf[data-active="true"]:active {
+  background: #DB165A !important;
+}
+
+.crisp-client .cc-kv6t .cc-vuur:active {
+  background: #CE1454 !important;
+}
+
+.crisp-client .cc-kv6t .cc-1gmp::selection,
+.crisp-client .cc-kv6t .cc-1gmp *::selection {
+  color: #191919 !important;
+  background-color: #FFE0EB !important;
+}</style></div><div class="cc-1kny"><style type="text/css">.crisp-client .cc-kv6t {
+  z-index: 1000000;
+}
+</style></div></div><div id="crisp-chatbox" dir="ltr" translate="no" data-blocked="true" data-lock-maximized="false" data-last-operator-face="false" data-availability-tooltip="false" data-hide-vacation="false" data-hide-on-away="false" data-hide-on-mobile="false" data-position-reverse="false" data-full-view="false" data-small-view="true" data-large-view="false" data-availability="away" data-is-activity-ongoing="false" data-was-availability-online="false" data-has-local-messages="false" class="cc-kv6t" lang="en"><div class="cc-1xry cc-1gmp"><a data-maximized="false" data-is-failure="false" role="button" class="cc-unoo" data-cshid="2c7b1e8c-9342-d2e6-a8ee-b2ab60843392"><span class="cc-1c9v"><span data-id="general_entice" data-with-helpdesk="true" data-is-concealed="false" class="cc-1bue"><span class="cc-1bcp"><span class="cc-1s28 cc-kgeu"><span class="cc-tkyh"><span class="cc-1t9t"><span class="cc-g0ak cc-hy0f"></span><span data-has-avatar="true" class="cc-xc93"><span class="cc-17df"><span class="cc-od26 cc-151q">Chat with support</span><span data-id="online" class="cc-1rau cc-kgeu">Support is online.</span><span data-id="away" class="cc-1rau cc-kgeu">Support is away.</span></span><span class="cc-56dg"><span class="cc-8exe cc-he6y"><span style="background-image: url('https://image.crisp.chat/avatar/operator/d6eba558-7b1a-4cd8-a581-4cb0ab656c24/240/?1643987216254') !important;" class="cc-1h5w cc-wsm4"></span></span></span></span></span></span><span data-when="online" class="cc-rzi5"><span class="cc-1yk0 cc-183m"><span class="cc-1viy"><span class="cc-16up cc-jq4y cc-151q">Chat with Direct.me Team</span></span></span></span><span data-when="away" class="cc-rzi5"><span data-pop="spotlight" class="cc-1yk0 cc-183m"><span class="cc-1viy"><span class="cc-16up cc-jq4y cc-151q">Search help center</span></span></span><span class="cc-1yk0 cc-183m"><span class="cc-1viy"><span class="cc-16up cc-151q">Chat</span></span></span></span></span></span></span></span><span class="cc-7doi cc-1ada"><span data-id="chat_closed" class="cc-1iv2"><span class="cc-1yxw"><span class="cc-16qx cc-1eqr"></span></span><span data-is-ongoing="false" class="cc-15mo"></span></span></span></a></div></div></div></body></html>
